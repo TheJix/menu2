@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Menu</title>
+  <title>Restaurant Menu</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
     }
 
     nav {
-      background-color: #333;
+      background-color: #8B0000;
       padding: 10px;
     }
 
@@ -22,6 +22,7 @@
       margin: 0;
       padding: 0;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
     }
@@ -40,7 +41,7 @@
     }
 
     .menu a:hover {
-      background: #555;
+      background: #A52A2A;
       border-radius: 4px;
     }
 
@@ -49,7 +50,7 @@
       position: absolute;
       top: 40px;
       left: 0;
-      background-color: #444;
+      background-color: #A52A2A;
       list-style: none;
       padding: 10px;
       border-radius: 4px;
@@ -72,27 +73,80 @@
 
 <nav>
   <ul class="menu">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a>
+    <li><a href="#">Appetizers</a>
       <ul class="submenu">
-        <li><a href="#">Team</a></li>
-        <li><a href="#">History</a></li>
+        <li><a href="#">Bruschetta</a></li>
+        <li><a href="#">Garlic Bread</a></li>
+        <li><a href="#">Stuffed Mushrooms</a></li>
       </ul>
     </li>
-    <li><a href="#">Services</a>
+    <li><a href="#">Soups</a>
       <ul class="submenu">
-        <li><a href="#">Web Design</a></li>
-        <li><a href="#">Development</a></li>
-        <li><a href="#">SEO</a></li>
+        <li><a href="#">Tomato Soup</a></li>
+        <li><a href="#">Chicken Noodle Soup</a></li>
+        <li><a href="#">Minestrone</a></li>
       </ul>
     </li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#">Salads</a>
+      <ul class="submenu">
+        <li><a href="#">Caesar Salad</a></li>
+        <li><a href="#">Greek Salad</a></li>
+        <li><a href="#">Garden Salad</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Main Courses</a>
+      <ul class="submenu">
+        <li><a href="#">Grilled Chicken</a></li>
+        <li><a href="#">Steak</a></li>
+        <li><a href="#">Pasta Primavera</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Seafood</a>
+      <ul class="submenu">
+        <li><a href="#">Grilled Salmon</a></li>
+        <li><a href="#">Shrimp Scampi</a></li>
+        <li><a href="#">Fish Tacos</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Pizzas</a>
+      <ul class="submenu">
+        <li><a href="#">Margherita</a></li>
+        <li><a href="#">Pepperoni</a></li>
+        <li><a href="#">BBQ Chicken</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Desserts</a>
+      <ul class="submenu">
+        <li><a href="#">Tiramisu</a></li>
+        <li><a href="#">Cheesecake</a></li>
+        <li><a href="#">Chocolate Lava Cake</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Drinks</a>
+      <ul class="submenu">
+        <li><a href="#">Soda</a></li>
+        <li><a href="#">Coffee</a></li>
+        <li><a href="#">Wine</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Specials</a>
+      <ul class="submenu">
+        <li><a href="#">Chef's Special</a></li>
+        <li><a href="#">Seasonal Dishes</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a>
+      <ul class="submenu">
+        <li><a href="#">Reservations</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
 <script>
-  // Example JS to handle mobile toggle or dynamic behavior later if needed
-  console.log('Menu loaded successfully.');
+  console.log('Restaurant menu loaded successfully.');
 </script>
 
 </body>
