@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .menu li {
+      position: relative;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 8px 12px;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .menu a:hover {
+      background: #555;
+      border-radius: 4px;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: #444;
+      list-style: none;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .submenu li {
+      margin: 5px 0;
+    }
+
+    .submenu a {
+      font-size: 16px;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a>
+      <ul class="submenu">
+        <li><a href="#">Team</a></li>
+        <li><a href="#">History</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Services</a>
+      <ul class="submenu">
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Development</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<script>
+  // Example JS to handle mobile toggle or dynamic behavior later if needed
+  console.log('Menu loaded successfully.');
+</script>
+
+</body>
+</html>
